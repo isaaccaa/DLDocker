@@ -43,10 +43,10 @@ docker build -t isaac/ptl:v0 . --network host
 ### 启用容器
 
 ```shell
-sudo docker run --gpus all -itd -p 10122:22 -v /home/isaac/Testcode/docker/data:/data test/ptl:v0
+sudo docker run --gpus all -itd -p 10122:22 -v PATH1:PATH2 isaac/ptl:v0
 ```
 
-之前的docker需要安装 `nvidia-docker` 来使用GPU加速, 但现在已经不需要啦, 只需要传入 `--gpus` 参数就可以让docker调用GPU了.
+要传入 `--gpus` 参数就可以让docker调用GPU了.
 
 `-itd` 表明交互式、终端、后台
 

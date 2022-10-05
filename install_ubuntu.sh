@@ -20,7 +20,7 @@ uclone(){
 touch install.log
 # Update source for nodejs
 cecho "Update source for nodejs"
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - 1>>install.log 2>&1
+curl -fsSL https://deb.nodesource.com/setup_16.x | bash - 1>>install.log 2>&1
 # Update System
 cecho "Update System"
 sudo apt-get update 1>>install.log 2>&1

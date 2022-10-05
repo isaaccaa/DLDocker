@@ -28,6 +28,10 @@ Ubuntu 源与 pip 源均已替换为清华源.
 
 ## 使用方法
 
+### 安装 NVIDIA Container Toolkit
+
+[NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker)
+
 ### 构建Docker镜像
 
 ```shell

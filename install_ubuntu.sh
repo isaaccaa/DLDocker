@@ -30,6 +30,7 @@ apt-get upgrade -y 1>>install.log 2>&1
 cecho "Clone my dotfiles"
 # cd to home
 cd ~
+rm -rf .config/
 # clone dotfiles
 uclone https://gitee.com/isaaccaa/config.git .config
 

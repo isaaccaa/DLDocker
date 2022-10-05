@@ -7,7 +7,7 @@ cecho() {
 uinstall(){
 	cecho "Installing $1"
 	echo "Installing $1" >> install.log
-	sudo apt-get install -y --no-install-recommends $1 1>>install.log 2>&1
+	apt-get install -y --no-install-recommends $1 1>>install.log 2>&1
 	cecho "Install Done"
 }
 
@@ -23,8 +23,8 @@ cecho "Update source for nodejs"
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash - 1>>install.log 2>&1
 # Update System
 cecho "Update System"
-sudo apt-get update 1>>install.log 2>&1
-sudo apt-get upgrade -y 1>>install.log 2>&1
+apt-get update 1>>install.log 2>&1
+apt-get upgrade -y 1>>install.log 2>&1
 
 # Clone my dotfiles
 cecho "Clone my dotfiles"
